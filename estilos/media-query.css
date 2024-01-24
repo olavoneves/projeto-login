@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 992px) {
+    html, body {
+        background-color: rgb(165, 131, 87);
+        background-image: url('../imagens/pexels-navneet-shanu-672630.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    section#login {
+       width: 65vw;
+       height: 60vh;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 45%;
+        height: 100%;
+        background-position: center center;
+        background-image: url('../imagens/pexels-pixabay-247671.jpg');
+    }
+
+    section#login > div#imagem:hover {
+        background-image: url('../imagens/pexels-pixabay-50570.jpg');
+        transition-duration: 2.2s;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    html, body {
+        background-color: rgb(165, 131, 87);
+        background-image: url('../imagens/pexels-navneet-shanu-672630.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    section#login {
+       width: 75vw;
+       height: 60vh;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+        background-position: center center;
+        background-image: url('../imagens/pexels-pixabay-247671.jpg');
+    }
+
+    section#login > div#imagem:hover {
+        background-image: url('../imagens/pexels-pixabay-50570.jpg');
+        transition-duration: 2.2s;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
