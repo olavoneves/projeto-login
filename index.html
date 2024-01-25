@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="../projeto-login/imagens/Iconshock-Cms-User-login.256.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
@@ -16,9 +17,22 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente !! Faça seu login para acessar sua conta e poder configurar seu ambiente.</p>
-                <form action="login.php" method="post">
-                    
+                <p>Seja bem-vindo(a) novamente !! Faça seu login para acessar sua conta e poder configurar seu ambiente de jogo.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                   <div class="campo">
+                        <span class="material-symbols-outlined">taunt</span>
+                        <input type="text" name="usuario" id="iusuario" placeholder="seu usuario" autocomplete="nickname" required minlength="8" maxlength="20">
+                        <label for="iusuario"></label>
+                   </div>
+                   <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="min 8 caracteres" autocomplete="current-password" required minlength="8" maxlength="16">
+                        <label for="isenha"></label>
+                   </div>
+                   <input type="submit" value="Entrar" class="entrar">
+                        <a href="esqueci.html" class="botao">
+                            Esqueci a senha ! <span class="material-symbols-outlined">mail</span>
+                        </a>
                 </form>
             </div>
         </section>
